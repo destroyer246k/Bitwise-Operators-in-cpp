@@ -27,5 +27,5 @@ To set a bit, the program uses the expression a | (1 << bit_set) which shifts 1 
 To reset a bit, it uses a & (~(1 << bit_reset)) which shifts 1 to the left, then uses bitwise NOT to create a mask, then ANDs to turn that bit OFF.
 The results of setting and resetting the bits are printed, and the program demonstrates basic bit manipulation, a common way to manipulate bits in system programming, embedded systems, or in performance-critical code.
 
-Conclusion:
+Conclusion:      
 We learn how to use bitwise operators in C++ and learned the concept pof setting anf resetting of bits. 
