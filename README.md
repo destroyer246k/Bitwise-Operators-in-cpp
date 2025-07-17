@@ -5,7 +5,7 @@ write a program to set and reset bit.
 
 Tools: GNU g++ compiler for local and code editor or Online C++ Compiler.
 
-Program Expalination:
+
 # Program 1: Bitwise Operations
 The program starts with the declaration and initialization of two integers a and b with 10 and 13 respectively, represented in binary as 1010 (for 10) and 1101 (for 13).
 The program demonstrates different types of bitwise operations: 
