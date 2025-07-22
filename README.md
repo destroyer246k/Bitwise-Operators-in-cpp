@@ -4,18 +4,39 @@ write a program to implement all bitwise operators.
 write a program to set and reset bit.
 
 Tools: GNU g++ compiler for local and code editor or Online C++ Compiler.
+# Theory
+
+
+Bitwise operators perform operations directly on **binary representations of integers**. These operators manipulate individual bits of data, enabling efficient computation especially useful in **low-level programming, optimization, and hardware-level tasks**. The two provided programs demonstrate bitwise manipulation using various operators.
+
+
+## Basic Bitwise Operations
+
+The first program demonstrates several fundamental bitwise operations:
+
+- **AND (`&`)**: Compares each bit of two numbers and returns 1 only if both bits are 1.
+- **OR (`|`)**: Compares each bit and returns 1 if either of the bits is 1.
+- **NOT (`~`)**: Inverts each bit of the number, turning 1 into 0 and 0 into 1, also known as complement.
+- **XOR (`^`)**: Returns 1 if the corresponding bits of operands are different.
+- **Left Shift (`<<`)**: Shifts bits of a number to the left, effectively multiplying the number by powers of 2.
+- **Right Shift (`>>`)**: Shifts bits to the right, effectively dividing the number by powers of 2.
+
+These operations allow us to manipulate data at the bit level, which is highly efficient for certain algorithms, cryptography, graphics processing, and embedded systems programming.
+
+
+## Bit Manipulation (Setting and Resetting Bits)
+
+The second program illustrates **bit manipulation techniques**:
+
+- **Setting a Bit**: To set (turn on) a particular bit, the program uses `OR (|)` with a **left-shifted mask** where the desired bit is set to 1. This ensures that the target bit is set without affecting other bits.
+
+- **Resetting a Bit**: To reset (turn off) a bit, the program uses `AND (&)` with the complement of the **left-shifted mask**, ensuring only the targeted bit is cleared.
+
+
 
 
 # Program 1: Bitwise Operations
 The program starts with the declaration and initialization of two integers a and b with 10 and 13 respectively, represented in binary as 1010 (for 10) and 1101 (for 13).
-The program demonstrates different types of bitwise operations: 
-AND (&) examines each bit of both numbers and returns 1 if both are equal to 1.     
-OR (|) returns 1 if the first number has at least one of the bits equal to 1.   
-NOT (~) flips each bit (making 1 equal to 0 and 0 equal to 1).  
-XOR (^) returns 1 if the bits are different.    
-Left Shift (<<) shifts given bit to the left, thus adding required bit each time the given bit shifts to left.  
-Right Shift (>>) shifts the bits to the right, thus adding required bit each time the given bit shifts to right.
-
 Each of the results is stored in its own variable and outputted using cout. These operations will assist in demonstrating how low-level data manipulation occurs in C++ and how we can define this more simply using bitwise logic.
 
 Algorithm:
