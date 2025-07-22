@@ -18,6 +18,19 @@ Right Shift (>>) shifts the bits to the right, thus adding required bit each tim
 
 Each of the results is stored in its own variable and outputted using cout. These operations will assist in demonstrating how low-level data manipulation occurs in C++ and how we can define this more simply using bitwise logic.
 
+Algorithm:
+1. Start
+2. Initialize integers a = 10, b = 13
+3. Perform and store results of:
+- a & b → AND
+- a | b → OR
+- ~a and ~b → NOT
+- a ^ b → XOR
+- a << 1, b << 1 → Left Shift
+- a >> 1, b >> 1 → Right Shift
+4. Print all results
+5. End
+
 # Program 2: Bit Set and Reset
 The program begins by creating an integer a and assigning it a value of 345. In binary, this is represented as 101011001.
 The program demonstrates to the user the process of setting and resetting bits in a number.
@@ -26,6 +39,16 @@ The user is then prompted to enter the position of a bit to reset (change to 0).
 To set a bit, the program uses the expression a | (1 << bit_set) which shifts 1 to the left by bit_set positions then uses a bitwise OR to turn that bit ON.
 To reset a bit, it uses a & (~(1 << bit_reset)) which shifts 1 to the left, then uses bitwise NOT to create a mask, then ANDs to turn that bit OFF.
 The results of setting and resetting the bits are printed, and the program demonstrates basic bit manipulation, a common way to manipulate bits in system programming, embedded systems, or in performance-critical code.
+
+Algorithm:
+1. Start
+2. Initialize integer a = 345
+3. Input bit position to set → bit_set
+4. Set bit using a | (1 << bit_set)
+5. Input bit position to reset → bit_reset
+6. Reset bit using a & (~(1 << bit_reset))
+7. Print results of both operations
+8. End
 
 Conclusion:      
 We learn how to use bitwise operators in C++ and learned the concept pof setting anf resetting of bits. 
