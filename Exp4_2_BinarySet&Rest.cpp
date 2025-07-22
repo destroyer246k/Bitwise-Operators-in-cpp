@@ -18,3 +18,10 @@ int main()
    
     return 0;
 }
+/*
+output:
+Enter Bit to be set:1
+Enter Bit to be reset:8
+Set bit 347
+reset bit 89
+*/
